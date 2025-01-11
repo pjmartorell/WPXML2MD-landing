@@ -1,5 +1,5 @@
 # Dependencies
-node_modules/
+node_modules
 
 # Build output
 dist/
@@ -7,11 +7,12 @@ output.css
 
 # Environment files
 .env
-.env.*
+.env*
+.env*.local
 
 # IDE/Editor files
-.vscode/
-.idea/
+.vscode
+.idea
 
 # Operating System files
 .DS_Store
@@ -22,3 +23,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# Git files
+.git
+
+# Documentation
+README.md
+
+# Log files
+*.log
+
+# Vercel
+.vercel
