@@ -1,6 +1,6 @@
 {
   "buildCommand": "sh build.sh",
-  "outputDirectory": "dist",
+  "outputDirectory": ".",
   "framework": "vite",
   "cleanUrls": true,
   "trailingSlash": false,

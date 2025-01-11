@@ -6,6 +6,7 @@ pnpm install
 # Build CSS
 pnpm run build
 
-# Copy necessary files to dist
-cp index.html dist/
-cp -r public dist/
+# Copy necessary files to root directory
+cp index.html .
+cp -r public .
+cp dist/output.css .
