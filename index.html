@@ -11,9 +11,9 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/dist/output.css" as="style">
-    <link rel="preload" href="demo_poster.png" as="image" fetchpriority="high">
-    <link rel="preload" href="logos/kofi.png" as="image">
-    <link rel="preload" href="logos/liberapay.svg" as="image">
+    <link rel="preload" href="/public/images/demo_poster.png" as="image" fetchpriority="high">
+    <link rel="preload" href="/public/images/logos/kofi.png" as="image">
+    <link rel="preload" href="/public/images/logos/liberapay.svg" as="image">
 
     <!-- Resource hints -->
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
@@ -186,9 +186,9 @@
                                 playsinline
                                 loading="lazy"
                                 preload="auto"
-                                poster="demo_poster.png"
+                                poster="/public/images/demo_poster.png"
                             >
-                                <source src="demo.webm" type="video/webm">
+                                <source src="/public/videos/demo.webm" type="video/webm">
                             </video>
 
                             <!-- Glass overlay -->
@@ -356,7 +356,7 @@
                     <a href="https://ko-fi.com/F1F818PV95"
                        class="group relative px-6 py-3 bg-[#00b9fe] hover:bg-[#00a2e0] rounded-xl text-white font-semibold inline-flex items-center gap-2 transition transform hover:scale-105 hover:shadow-[0_0_15px_rgba(0,185,254,0.5)]">
                         <div class="w-5 h-5 flex items-center justify-center">
-                            <img src="logos/kofi.png" alt="Ko-fi" class="w-full h-full object-contain group-hover:scale-110 transition-transform" loading="lazy" decoding="async" width="20" height="20" />
+                            <img src="/public/images/logos/kofi.png" alt="Ko-fi" class="w-full h-full object-contain group-hover:scale-110 transition-transform" loading="lazy" decoding="async" width="20" height="20" />
                         </div>
                         <span>Buy me a coffee</span>
                     </a>
@@ -365,7 +365,7 @@
                     <a href="https://liberapay.com/pjmartorell"
                        class="group relative px-6 py-3 bg-[#f6c915] hover:bg-[#e1b700] rounded-xl text-[#1a171b] font-semibold inline-flex items-center gap-2 transition transform hover:scale-105 hover:shadow-[0_0_15px_rgba(246,201,21,0.5)]">
                         <div class="w-5 h-5 flex items-center justify-center">
-                            <img src="logos/liberapay.svg" alt="Liberapay" class="w-full h-full object-contain group-hover:scale-110 transition-transform" loading="lazy" decoding="async" width="20" height="20" />
+                            <img src="/public/images/logos/liberapay.svg" alt="Liberapay" class="w-full h-full object-contain group-hover:scale-110 transition-transform" loading="lazy" decoding="async" width="20" height="20" />
                         </div>
                         <span>Donate on Liberapay</span>
                     </a>
