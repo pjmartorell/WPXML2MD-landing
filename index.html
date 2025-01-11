@@ -127,6 +127,25 @@
         .text-2xl .ti, .text-3xl .ti {
             vertical-align: -0.225em;
         }
+
+        /* P0dc6 */
+        .hamburger-icon {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger-icon {
+                display: block;
+            }
+
+            .desktop-menu {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body class="bg-[#0A0A0F] text-text-primary overflow-x-hidden">
@@ -135,6 +154,22 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">WPXML2MD</h1>
             <div class="flex items-center gap-6">
+                <div class="desktop-menu">
+                    <a href="#features" class="text-text-secondary hover:text-primary-light transition">Features</a>
+                    <a href="#how-it-works" class="text-text-secondary hover:text-primary-light transition">How It Works</a>
+                    <a href="https://github.com/pjmartorell/WPXML2MD"
+                       class="bg-dark-mid hover:bg-dark-lighter text-primary px-4 py-2 rounded-lg transition flex items-center gap-2">
+                        <i class="ti ti-brand-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="hamburger-icon cursor-pointer">
+                    <i class="ti ti-menu-2 text-2xl text-text-secondary"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu bg-dark-DEFAULT/80 border-t border-primary/10">
+            <div class="container mx-auto px-4 py-4 flex flex-col gap-4">
                 <a href="#features" class="text-text-secondary hover:text-primary-light transition">Features</a>
                 <a href="#how-it-works" class="text-text-secondary hover:text-primary-light transition">How It Works</a>
                 <a href="https://github.com/pjmartorell/WPXML2MD"
@@ -417,5 +452,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerIcon = document.querySelector('.hamburger-icon');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            hamburgerIcon.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
