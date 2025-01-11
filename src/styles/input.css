@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Pb2c7 */
+.hamburger-icon {
+  @apply hidden md:block;
+}
+
+.mobile-menu {
+  @apply hidden md:block;
+}
